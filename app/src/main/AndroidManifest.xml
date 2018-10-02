@@ -20,7 +20,8 @@
         <activity android:name=".Attendance" />
         <activity android:name=".Scheduler" />
         <activity android:name=".GpaCal" />
-        <activity android:name=".Notes"></activity>
+        <activity android:name=".Notes" />
+        <activity android:name=".Splash"></activity>
     </application>
 
 </manifest>

@@ -18,6 +18,7 @@ public class Splash extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+
         tv= findViewById(R.id.tv);
         iv=findViewById(R.id.iv);
 
@@ -26,12 +27,13 @@ public class Splash extends AppCompatActivity {
         tv.startAnimation(myAnim);
         iv.startAnimation(myAnim);
         final Intent i = new Intent(this, MainActivity.class);
-        Thread timer = new Thread(){
 
+        Thread timer = new Thread(){
+            @Override
             public void run(){
 
                 try {
-                    sleep(5000);
+                    sleep(3000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }

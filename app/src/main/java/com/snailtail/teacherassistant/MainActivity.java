@@ -6,14 +6,20 @@ import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
 
+import com.stephentuso.welcome.WelcomeHelper;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private CardView profile_cv,scheduler_cv,attendance_cv,notes_cv,gpaCal_cv;
+    WelcomeHelper welcomeScreen;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        welcomeScreen = new WelcomeHelper(this, Welcome.class);
+        welcomeScreen.show(savedInstanceState);
 
         profile_cv=  findViewById(R.id.profile_cardview);
         scheduler_cv= findViewById(R.id.scheduler_cardview);
@@ -27,8 +33,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         notes_cv.setOnClickListener(this);
         gpaCal_cv.setOnClickListener(this);
 
+    }
 
-
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        welcomeScreen.onSaveInstanceState(outState);
     }
 
     @Override

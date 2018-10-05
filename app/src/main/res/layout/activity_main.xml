@@ -11,7 +11,7 @@
     android:gravity="center"
     android:nestedScrollingEnabled="false"
     android:orientation="vertical"
-    android:padding="10dp"
+    android:padding="15dp"
     app:layout_scrollFlags="scroll"
     tools:context=".MainActivity">
 
@@ -42,7 +42,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circlebackgroundpurple"
+                    android:background="@drawable/circlebackgroundyellow"
                     android:padding="10dp"
                     android:src="@drawable/ic_person_outline_black_24dp" />
 
@@ -152,7 +152,7 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:background="@drawable/circlebackgroundyellow"
+                    android:background="@drawable/circlebackgroundnew1"
                     android:padding="10dp"
                     android:src="@drawable/ic_assignment_ind_black_24dp" />
 

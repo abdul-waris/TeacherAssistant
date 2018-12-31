@@ -9,6 +9,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
+//animated splash screen using thread but in the current test mode it is being used
 public class Splash extends AppCompatActivity {
 
     private TextView tv;

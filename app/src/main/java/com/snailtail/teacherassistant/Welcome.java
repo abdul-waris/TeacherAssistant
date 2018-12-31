@@ -10,29 +10,37 @@ public class Welcome extends WelcomeActivity {
     @Override
     protected WelcomeConfiguration configuration() {
         return new WelcomeConfiguration.Builder(this)
-                .defaultBackgroundColor(R.color.yellow)
-                .page(new TitlePage(R.drawable.logo,
-                        "An All in one Assistant App")
+                .defaultBackgroundColor(R.color.white)
+                .page(new TitlePage(R.mipmap.logo,
+                        "An All in one Assistant App for teachers")
+                        .titleColor(getResources().getColor(R.color.yellow)).
                 )
-                .page(new BasicPage(R.drawable.avatar_placeholder,
+                .page(new BasicPage(R.drawable.ic_person_outline_black_24dp,
                         "Profiles",
                         "Student Profiles displaying the details")
                         .background(R.color.yellow)
                 )
-                .page(new BasicPage(R.drawable.ic_assignment_ind_black_24dp,
-                        "Lorem ipsum",
-                        ".")
+                .page(new BasicPage(R.drawable.ic_alarm_on_black_24dp,
+                        "Scheduler",
+                        "Set reminders and schedule important tasks.")
                         .background(R.color.pink)
                 )
-                .page(new BasicPage(R.mipmap.ic_launcher,
-                        "Header",
-                        "More text.")
-                        .background(R.color.yellow)
+                .page(new BasicPage(R.drawable.ic_assignment_ind_black_24dp,
+                        "Attendance",
+                        "Student attendance record details.")
+                        .background(R.color.new1)
                 )
-                .page(new BasicPage(R.mipmap.ic_launcher,
-                        "Lorem ipsum",
-                        "dolor sit amet.")
+                .page(new BasicPage(R.drawable.ic_create_black_24dp,
+                        "Notes",
+                        "Takes personal notes.")
+                        .background(R.color.green)
                 )
+                .page(new BasicPage(R.drawable.ic_school_black_24dp,
+                        "GPA calculator",
+                        "Calculate GPA.")
+                        .background(R.color.deepPurple)
+                )
+
                 .swipeToDismiss(true)
                 .build();
     }

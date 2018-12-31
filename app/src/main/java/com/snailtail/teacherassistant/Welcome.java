@@ -5,6 +5,7 @@ import com.stephentuso.welcome.TitlePage;
 import com.stephentuso.welcome.WelcomeActivity;
 import com.stephentuso.welcome.WelcomeConfiguration;
 
+//welcome screen
 public class Welcome extends WelcomeActivity {
 
     @Override
